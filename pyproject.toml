@@ -1,0 +1,26 @@
+[project]
+name = "us"
+version = "0.1.0"
+description = "Us."
+authors = [{ name = "Belyashik2K" }]
+requires-python = ">=3.13"
+dependencies = [
+    "rich>=14",
+    "plotext>=5.3,<6",
+    "PyGithub>=2.5",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "pytest-sugar>=1.0",
+    "ruff>=0.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
