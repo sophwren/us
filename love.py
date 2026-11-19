@@ -1,7 +1,6 @@
 # Copyright (c) 2025 Belyashik2K
 # Errors should never pass silently.
 
-import os
 from datetime import date, timedelta
 
 from rich.traceback import install
@@ -32,7 +31,6 @@ def you(memories: list[bytes]) -> None:
 
 def another_love(memories: list[bytes]) -> None:
     # TODO: cry
-    memories.append(os.urandom(MiB))
     you(memories)
 
 
