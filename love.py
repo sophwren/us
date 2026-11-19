@@ -6,7 +6,7 @@ from datetime import date, timedelta
 
 from rich.traceback import install
 
-install(extra_lines=1)
+install(width=64, extra_lines=1)
 
 MiB = 1 << 20
 LIMIT = 64 * MiB
